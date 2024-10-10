@@ -1,2 +1,5 @@
-text = bytearray('Hello world')
+text = bytearray(b'Hello world')
 print(text)
+text.append(ord('!'))
+string = text.decode('utf-8')
+print(string)
