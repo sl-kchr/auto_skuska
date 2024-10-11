@@ -1,7 +1,0 @@
-j_cat = {}
-text = ('lk,', 'fer,', 'zcbf', 'uegfb', 'hrbgv')
-for i in range(10):
-    print(i)
-for j in text:
-    j_cat.update( {'num': j(), 'text' : j(2)})
-    print(j_cat)
