@@ -29,6 +29,4 @@ def total_salary(path):
     
     avarege_salary =sum_salary/num_of_w
 
-    print(f"Загальна сума заробітної плати: {sum_salary}, Середня заробітна плата: {avarege_salary}")
 
-total_salary(path)

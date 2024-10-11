@@ -1,5 +1,7 @@
-text = bytearray(b'Hello world')
-print(text)
-text.append(ord('!'))
-string = text.decode('utf-8')
-print(string)
+j_cat = {}
+text = ('lk,', 'fer,', 'zcbf', 'uegfb', 'hrbgv')
+for i in range(10):
+    print(i)
+for j in text:
+    j_cat.update( {'num': j(), 'text' : j(2)})
+    print(j_cat)
