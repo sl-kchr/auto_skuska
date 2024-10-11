@@ -15,11 +15,20 @@ def change_contact(args, contacts):
 
 def show_phone(args, contacts):
     name = args[0]
-    phone = contacts[name]
-    return phone
+    if not contacts:
+        return('Contact list is empty')
+    else:
+        if name in contacts:
+            phone = contacts[name]
+            return f'Phone number for contact "{name}": {phone}'
+        else:
+            return('The contact was not found')
 
 def show_all(contacts):
-    return(contacts)
+    if not contacts:
+        return('Contact list is empty')
+    else:
+        return(f'Here are all your contacts: {contacts}')
 
 def main():
     contacts = {}
@@ -32,7 +41,7 @@ def main():
             print('Good bye!')
             break
         elif command == 'hello':
-            print("How can I help you?")
+            print("Hello, how can I help you?")
         elif command == 'add':
             print(add_contact(args, contacts))
         elif command == 'change':
